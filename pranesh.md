@@ -11,7 +11,7 @@ Education
 ---------
 
 2011-2013
-:   **MS, Computer Science**; Georgia Institute of Technology(Atlanta)
+:   **MS, Computer Science** Georgia Institute of Technology(Atlanta)
 
     *Specialization: Systems*
     *GPA – 3.8/4*
@@ -25,7 +25,9 @@ Education
 Experience
 ----------
 
-**Tech Yahoo, Intermediate, Yahoo Inc:**, 2013-present  
+**Senior Software Engineer, GoDaddy Inc**, 2016-
+
+**Tech Yahoo, Intermediate, Yahoo Inc**, 2013-2016
 [Openstack](http://www.openstack.org/) developer 
 
 * Getting OpenStack to be used at Y! (as its core infrastructure), which 
