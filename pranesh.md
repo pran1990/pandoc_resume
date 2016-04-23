@@ -28,12 +28,35 @@ Experience
 **Senior Software Engineer, GoDaddy Inc**, 2016-
 
 **Tech Yahoo, Intermediate, Yahoo Inc**, 2013-2016
+
 [Openstack](http://www.openstack.org/) developer 
 
 * Getting OpenStack to be used at Y! (as its core infrastructure), which 
-  involves code changes to OpenStack, conferences and session talks on needed 
+  involved code changes to OpenStack, conferences and session talks on needed 
   features (ie to be used at Y! scale) and integration into Y!'s core systems 
   and ensuring the work that Y! does is given back to the community.
+
+    * Techniques to package and deploy openstack robustly at Yahoo using
+      [anvil](http://www.github.com/openstack/anvil). We went from deploying
+      once in six months (once every major upstream release), to being able to
+      deploy at every commit.
+
+    * Work on integrating the openstack provision and deprovision flow into
+      Yahoo’s provisioning system. Integrate into Yahoo’s dns, ops, load
+      balancer databases/services.
+
+    * Work on a fork of openstack to allow us to migrate a six-figure number of
+      machines at Yahoo to a more elastic model. One outcome of this that I was
+      responsible for was to reduce the SLA for obtaining a new machine in a
+      standard configuration from O(months) to under 5 hours. Two major chunks
+      I worked on were to design a yahoo-focussed quota system, and to hack at
+      the scheduler to handle a 10x higher load than it was designed for.
+
+    * Work on improving the community baremetal project,
+      [Ironic](http://www.github.com/openstack/ironic) to improve concurrency
+      by elminating some race conditions in the scheduler. This was a community
+      solution that I implemented, tested and proved better (through some scale 
+      tests).
 
 **Graduate Research Assistant, Georgia Tech**, 2012-2013  
 
@@ -56,33 +79,9 @@ Experience
   was a software implementation of a hardware tool used in judging modem
   performance
 
-**Intern, TU Darmstadt**, 2010  
-
-* Exploring Visual Self-localisation Algorithms for Mobile Platforms  
-  Map the movement of a robot, given a sequence of stereo images taken from it.
-
-**Visiting Intern, National University of Singapore**, 2009  
-
-* Coordinated Behaviour of Multiple robots  
-  Implemented a military escort system using a few commodity robots (Rovio from WowWee)
-  and Player/Stage software
 
 Technical Experience
 --------------------
 
-Open Source
-:   Contributed reviews and code upstream on several openstack projects,
-    core in taskflow (https://wiki.openstack.org/TaskFlow) and anvil
-    (https://anvil.readthedocs.org/en/latest/)
-
-Entropy
-:   Entropy is a framework to write cluster-check scripts, and reaction scripts 
-    to the errors/issues these audits raise. This automates reacting to failure. 
-    A potentially more important use is to aggregate failures, notice trends in 
-    failures, and developing a database of known failures to make dealing with
-    new ones easier.  
-    https://github.com/openstack/entropy
-    https://launchpad.net/openstack-entropy
-
 Programming Languages
-:   Python, C, C++, Ruby (chef recipes), Java
+:   Python, C, C++, Java
