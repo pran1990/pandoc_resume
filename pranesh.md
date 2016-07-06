@@ -27,6 +27,9 @@ Experience
 
 **Senior Software Engineer, GoDaddy Inc**, 2016-
 
+* Managed Kubernetes
+* Openstack Ironic
+
 **Tech Yahoo, Intermediate, Yahoo Inc**, 2013-2016
 
 [Openstack](http://www.openstack.org/) developer 
