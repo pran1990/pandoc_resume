@@ -14,21 +14,35 @@ Education
 :   **MS, Computer Science** Georgia Institute of Technology(Atlanta)
 
     *Specialization: Systems*
-    *GPA – 3.8/4*
 
 2007-2011
 :   **BTech, Computer Science and Engineering** National Institute of
     Technology(Trichy)
 
-    *GPA: 8/10*
 
 Experience
 ----------
 
-**Senior Software Engineer, GoDaddy Inc**, Mar 2016-
+**Software Engineer, Dropbox**, Nov 2016 - 
 
-* Managed Kubernetes
-* Openstack Ironic
+* As a two-engineer team, moved all of the app infrastructure state from
+  MySql to Dropbox's custom graph database.  
+* Design and implement techniques to allow apps to scan a team's dropbox
+  efficiently, as part of a larger project to normalize filesystem and shared
+  folder authorization across the company. 
+* Remove Amazon S3 dependency in our file upload API.  
+* API Proxy
+    * In context of breaking down our monolithic code into services, design and
+      implement an external facing service to proxy API requests to internal
+      services.  
+    * Move dropbox from multiple IDLs to one (protobuf)  
+    * Design a standardized auth object to pass around between internal services.
+
+
+**Senior Software Engineer, GoDaddy Inc**, Mar 2016 - Nov 2016  
+
+* Prototype managed Kubernetes cluster
+* Prototype managed Openstack Ironic cluster
 
 **Tech Yahoo, Intermediate, Yahoo Inc**, Jul 2013 - Mar 2016
 
@@ -49,16 +63,16 @@ Experience
       balancer databases/services.
 
     * Work on a fork of openstack to allow us to migrate a six-figure number of
-      machines at Yahoo to a more elastic model. One outcome of this that I was
+      machines at Yahoo to a more elastic model. An outcome of this that I was
       responsible for was to reduce the SLA for obtaining a new machine in a
       standard configuration from O(months) to under 5 hours. Two major chunks
-      I worked on were to design a yahoo-focussed quota system, and to hack at
+      I worked on were to design a Yahoo-focussed, generic quota system, and to hack at
       the scheduler to handle a 10x higher load than it was designed for.
 
     * Work on improving the community baremetal project,
       [Ironic](http://www.github.com/openstack/ironic) to improve concurrency
       by elminating some race conditions in the scheduler. This was a community
-      solution that I implemented, tested and proved better (through some scale 
+      solution that I implemented, tested and proved better (through scale 
       tests).
 
 **Graduate Research Assistant, Georgia Tech**, 2012-2013  
